@@ -1,4 +1,5 @@
 .masthead{
+  padding: 100px;
   height: 500px;
   background-position: center center;
   background-attachment: scroll;
@@ -11,15 +12,14 @@
   position: relative;
   .masthead-heading {
     text-align: left;
-    font-size: 4rem;
+    font-size: 5rem;
   }
   .masthead-subheading {
     text-align: left;
-    font-size: 2rem;
+    font-size: 3rem;
 
   }
 }
-
 
 #containercards {
   min-height: 100vh;
@@ -47,3 +47,4 @@ h6{
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
+
