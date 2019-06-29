@@ -1,0 +1,50 @@
+<div class="container mt-5 bg-primary">
+  <div class="row mt-5">
+    <div class="col-md-12 bg-white shadowm-sm p-5">
+   <h2>Filmes </h2>
+   <!-- <form>
+      <div class="form-row">
+        <div class="col-7">
+          <input type="text" class="form-control" placeholder="Product name">
+        </div>
+      <div class="col">
+         <input type="number" class="form-control" placeholder="Price">
+      </div>
+      <div class="col">
+         <input type="number" class="form-control" placeholder="Sales">
+      </div>
+      <div class="form-check col form-check-inline">
+         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+       <label class="form-check-label text-muted" for="inlineCheckbox1">Active</label>
+      </div>
+      <div class="col">
+         <button type="button" class="btn btn-outline-primary">Create</button>
+       </div>
+     </div>
+    </form> -->
+
+    </div>
+    <div class="col-md-12 bg-white shadowm-sm mt-5">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>SKU</th>
+            <th>PRODUCT</th>
+            <th>PRICE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor ="let product of products">
+            <td scope="row">{{product.sku}}</td>
+            <td>{{ product.product}}</td>
+            <td>{{product.price | currency }}</td>
+          </tr>
+          <tr>
+            <td scope="row"></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</div>
