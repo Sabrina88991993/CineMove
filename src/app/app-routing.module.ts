@@ -10,6 +10,7 @@ const routes: Routes = [
     { path: '', redirectTo: '/store', pathMatch: 'full' },
     { path: 'store', loadChildren: './store/store.module#StoreModule' },
     { path: 'products', loadChildren: './products/products.module#ProductsModule' },
+    { path: 'register', loadChildren: './register/register.module#RegisterModule' },
     { path: 'not-found', loadChildren: './not-found/not-found.module#NotFoundModule' },
     { path: '**', redirectTo: 'not-found' }
 
