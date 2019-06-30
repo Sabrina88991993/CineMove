@@ -12,16 +12,16 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit() {
     const products =[
-        {sku:12341, product:'Product 10', price: '50,99'  },
-        {sku:12342, product:'Product 20' , price: '52,99' },
-        {sku:12343, product:'Product 30' , price: '53,99' },
-        {sku:12344, product:'Product 40' , price: '54,99' },
-        {sku:12345, product:'Product 50' , price: '55,99' },
-        {sku:12346, product:'Product 60' , price: '56,99' },
-        {sku:12347, product:'Product 70' , price: '57,99' },
-        {sku:12348, product:'Product 80' , price: '58,99' },
-        {sku:12349, product:'Product 90' , price: '59,99' },
-        {sku:12350, product:'Product 100' , price: '60,99'},
+        {sku:12341, product:'After',  price: 50.99 },
+        {sku:12342, product:'Burn your Maps' , price: 50.99 },
+        {sku:12343, product:'Rota de Fuga 3' , price: 50.99 },
+        {sku:12344, product:'A espiã vermelha' , price: 50.99 },
+        {sku:12345, product:'Fast Color' , price: 50.99 },
+        {sku:12346, product:'Morte instantânea' , price: 50.99 },
+        {sku:12347, product:' Bardo Blues' , price: 50.99 },
+        {sku:12348, product:'Albatroz' , price: 50.99 },
+        {sku:12349, product:'#FallowMe' , price: 50.99 },
+        {sku:12350, product:'Zumbilândia 2', price: 50.99 },
       ]
 
       const productFy = JSON.stringify(products);
@@ -33,11 +33,12 @@ export class ProductsComponent implements OnInit {
       //console.log(products);
       //console.log(productFy);
       //CRIAÇÃO
-       // localStorage.setItem("key", "test");
+      localStorage.setItem("key", "test");
         //this.products = localStorage.getItem('key');
       //DELETAR
       //localStorage.removeItem('key');
-
+      //CLEAR
+      localStorage.clear();
       //this.testLocal = localStorage.getItem('key');
     }
   }
